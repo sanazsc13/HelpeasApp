@@ -6,7 +6,7 @@
 ## Prerequisites
 
 Before executing this app, make sure the following elements are downloaded : 
-- **Java Development Kit (JDK) 17 or above : you can dowload it from here [Oracle JDK](https://www.oracle.com/java/technologies/javase-jdk17-downloads.html)
+- **Java Development Kit** (JDK) 17 or above : you can dowload it from here [Oracle JDK](https://www.oracle.com/java/technologies/javase-jdk17-downloads.html)
 - **Apache Maven**: you can download it from here  [maven.apache.org](https://maven.apache.org/download.cgi)
 
 ## Dowloading Dependencies 
