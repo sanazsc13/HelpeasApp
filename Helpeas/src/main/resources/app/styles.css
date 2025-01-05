@@ -1,0 +1,124 @@
+/* Styles généraux pour les cartes */
+.card {
+    -fx-padding: 20;
+    -fx-background-color: #fdf1f9; /* Rose pastel très clair */
+    -fx-border-color: #f0c9e7; /* Bordure rose pâle douce */
+    -fx-border-width: 1;
+    -fx-border-radius: 12; /* Bords arrondis pour un look moderne */
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 8, 0, 0, 8); /* Ombre douce */
+    -fx-transition: all 0.3s ease; /* Animation fluide */
+}
+
+.card:hover {
+    -fx-background-color: #f5d1e4; /* Changement de couleur au survol vers un rose pastel un peu plus foncé */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.15), 12, 0, 0, 8); /* Ombre plus marquée au survol */
+}
+
+/* Styles pour le titre de la carte */
+.card-title {
+    -fx-font-size: 16px; /* Taille de police ajustée comme dans l'exemple d'origine */
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333; /* Gris foncé pour un contraste élégant */
+    -fx-padding-bottom: 8px;
+}
+
+/* Styles pour la description de la carte */
+.card-description {
+    -fx-font-size: 14px;
+    -fx-text-fill: #777777; /* Gris moyen */
+    -fx-line-spacing: 2px;
+}
+
+/* Style pour la date dans les cartes */
+.card-date {
+    font-size: 14px;
+    color: #a1a1a1; /* Gris clair pour la date */
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* Styles pour le formulaire d'ajout de carte */
+#addCardForm {
+    -fx-border-color: #f0c9e7;
+    -fx-border-width: 1;
+    -fx-padding: 20;
+    -fx-background-color: #f9e8f1; /* Rose pastel très clair pour le fond */
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-transition: all 0.3s ease;
+}
+
+#addCardForm:hover {
+    -fx-background-color: #f5d1e4; /* Légère variation de couleur au survol */
+}
+
+/* Style des champs de texte */
+TextField {
+    -fx-padding: 10;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-border-color: #f0c9e7; /* Bordure rose pâle discrète */
+    -fx-background-color: #ffffff; /* Fond blanc pour un look épuré */
+    -fx-font-size: 14px; /* Taille de la police comme dans l'exemple d'origine */
+    -fx-text-fill: #333333; /* Texte gris foncé */
+    -fx-transition: all 0.2s ease;
+}
+
+TextField:focused {
+    -fx-border-color: #f4a6c8; /* Bordure rose clair au focus */
+    -fx-background-color: #f5e2f4; /* Légère variation au focus */
+}
+
+/* Styles pour les boutons */
+Button {
+    -fx-padding: 12 25;
+    -fx-background-color: #ffb6d2; /* Rose pastel doux */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 30; /* Coins arrondis pour un effet moderne */
+    -fx-border-radius: 30;
+    -fx-font-size: 10px; /* Taille de la police ajustée comme dans l'exemple d'origine */
+    -fx-transition: all 0.3s ease;
+}
+
+Button:hover {
+    -fx-background-color: #ff89c2; /* Légère variation au survol */
+    -fx-cursor: hand;
+}
+
+Button:focused {
+    -fx-background-color: #ff79b2; /* Couleur plus foncée lors du focus */
+}
+
+/* Boutons de formulaire d'ajout de carte */
+Button:disabled {
+    -fx-background-color: #e5b8cc; /* Gris rosé pour les boutons désactivés */
+    -fx-text-fill: #a1a1a1; /* Texte gris clair pour les boutons désactivés */
+}
+
+/* Style pour le menu */
+MenuBar {
+    -fx-background-color: #ffffff; /* Fond blanc pour une interface claire */
+    -fx-border-color: #f0c9e7; /* Bordure douce rose pâle */
+    -fx-border-width: 1;
+}
+
+Menu {
+    -fx-text-fill: #333333; /* Gris foncé pour un contraste optimal */
+}
+
+MenuItem {
+    -fx-text-fill: #555555; /* Gris moyen pour les items de menu */
+    -fx-font-size: 14px;
+}
+
+MenuItem:hover {
+    -fx-background-color: #f5d1e4; /* Légère variation de couleur rose au survol */
+    -fx-text-fill: #333333; /* Texte foncé au survol */
+}
+
+/* Style général du bord de la fenêtre */
+BorderPane {
+    -fx-background-color: #fafafa; /* Fond très clair pour la fenêtre principale */
+}

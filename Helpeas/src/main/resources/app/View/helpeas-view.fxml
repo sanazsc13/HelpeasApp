@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="butonbox5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.helpeas.Controller.HelpeasController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <VBox alignment="CENTER" prefHeight="461.0" prefWidth="260.0" spacing="25.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnbox1" mnemonicParsing="false" onAction="#clickBox1" prefHeight="60.0" prefWidth="90.0" text="Box n°1" />
+            <Button fx:id="btnbox2" mnemonicParsing="false" onAction="#clickBox2" prefHeight="60.0" prefWidth="90.0" text="Box n°2" />
+            <Button fx:id="btnbox3" mnemonicParsing="false" onAction="#clickBox3" prefHeight="60.0" prefWidth="90.0" text="Box n°3" />
+            <Button fx:id="btnbox4" mnemonicParsing="false" onAction="#clickBox4" prefHeight="60.0" prefWidth="90.0" text="Box n°4" />
+            <Button fx:id="btnbox5" mnemonicParsing="false" onAction="#clickBox5" prefHeight="60.0" prefWidth="90.0" text="Box n°5" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </left>
+   <center>
+       <ScrollPane fitToHeight="true" fitToWidth="true">
+           <content>
+               <VBox fx:id="ContentVbox" alignment="CENTER" prefHeight="574.0" prefWidth="455.0" BorderPane.alignment="CENTER">
+                   <Text fx:id="ContentTextVbox" />
+               </VBox>
+           </content>
+       </ScrollPane>
+   </center>
+   <right>
+       <VBox fx:id="addCardForm" alignment="CENTER" prefHeight="574.0" prefWidth="261.0" spacing="10">
+           <Label alignment="TOP_CENTER" text="New Card"/>
+           <TextField fx:id="subjectField" promptText="Subject" />
+           <TextField fx:id="chapterField" promptText="Chapter" />
+           <TextField fx:id="questionField" promptText="Question" />
+           <TextField fx:id="answerField" promptText="Answer" />
+           <TextField fx:id="imagePathField" promptText="ImagePath (optional)" />
+           <Button text="Add a new Card" onAction="#addCard" />
+           <Text fx:id="notallrequired" />
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></VBox>
+
+   </right>
+</BorderPane>
